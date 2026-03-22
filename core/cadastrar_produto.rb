@@ -17,10 +17,10 @@ def cadastrar_produto(produtos)
 	limpar_tela
 
 	produtos << {
-		id: Time.now.to_i
+		id: Time.now.to_i,
 		nome: nome,
 		descricao: descricao,
 		preco: preco,
-		qauntidade: quantidade_estoque
+		quantidade: quantidade
 	}
 end

@@ -13,6 +13,7 @@ def cadastrar_produto(produtos)
 	limpar_tela
 
 	mensagem_azul("Digite a quantidade em estoque do produto (#{verde(nome.strip)}): ", false, false)
+	mensagem_verde("Quantidade atual (#{amarelo(nome)}):", false, false)
 	quantidade = gets.to_i
 	limpar_tela
 
@@ -23,4 +24,6 @@ def cadastrar_produto(produtos)
 		preco: preco,
 		quantidade: quantidade
 	}
+
+	mensagem("o produto #{amarelo(nome)} foi cadastrado com sucesso!", true , true, 3)
 end

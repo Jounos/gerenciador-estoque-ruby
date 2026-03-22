@@ -38,7 +38,7 @@ def amarelo(msg)
 end
 
 def azul(msg)
-	"\e[34m#{msg}\e[0m"
+	"\e[36m#{msg}\e[0m"
 end
 
 def limpar_tela
